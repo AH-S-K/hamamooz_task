@@ -1,0 +1,54 @@
+# === Python Sync & Cache ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === Environments (محیط‌های مجازی) ===
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# === PyCharm / JetBrains IDE ===
+# پوشه تنظیمات پایچارم که معمولاً نباید کامیت شود
+.idea/
+# اگر می‌خواهید تنظیمات کلی بماند ولی تسک‌ها و دیتابیس‌های محلی حذف شوند، خط بالا را کامنت کنید و خطوط زیر را فعال کنید:
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/usage.statistics.xml
+# .idea/dictionary.xml
+# .idea/shelf/
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints
+
+# === Database & Local Logs ===
+*.log
+*.sqlite3
+*.db
+
+# === OS files (فایل‌های سیستم‌عامل) ===
+.DS_Store
+Thumbs.db
