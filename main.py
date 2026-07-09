@@ -209,6 +209,11 @@ def main():
 
         with file:
             for line in file:
+
+                line = line.strip()
+                if not line:
+                    continue
+
                 total_lines += 1
 
                 parsed_data = parse_log_line(line)
@@ -248,13 +253,13 @@ def main():
         if tar_handle:
             tar_handle.close()
 
-    execution_time = time.time() - start_time
-
     # محاسبه نهایی آمار کل
     error_rate = ((errors_4xx + errors_5xx) / total_valid * 100) if total_valid > 0 else 0.0
 
     top_login_failures = detect_brute_force(login_failures, top_n=5)
     detected_spikes = detect_5xx_spike(minute_distribution, minute_5xx_counts, min_delta=10.0, min_traffic_gate=10)
+
+    execution_time = time.time() - start_time
 
     print_dashboard(
         total_lines, total_valid, malformed_lines, len(ip_counts),

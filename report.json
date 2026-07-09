@@ -1,0 +1,141 @@
+{
+    "summary": {
+        "total_lines_read": 500000,
+        "valid_requests": 495044,
+        "malformed_lines_skipped": 4956
+    },
+    "traffic": {
+        "unique_ips_count": 4001,
+        "http_4xx_errors": 26637,
+        "http_5xx_errors": 24438,
+        "overall_error_rate_percent": 10.32
+    },
+    "security_anomalies": {
+        "brute_force_login_attempts": [
+            {
+                "ip": "21.67.75.144",
+                "failed_attempts": 7464
+            }
+        ]
+    },
+    "infrastructure_health": {
+        "detected_5xx_error_spikes": [
+            {
+                "minute": "01/Jun/2026:04:53",
+                "rate_jump": 32.428885698996886,
+                "current_rate": 34.946871310507674,
+                "previous_rate": 2.5179856115107913,
+                "count": 296,
+                "total_volume": 847
+            }
+        ]
+    },
+    "top_endpoints": [
+        {
+            "path": "/",
+            "hits": 146302
+        },
+        {
+            "path": "/products",
+            "hits": 87685
+        },
+        {
+            "path": "/api/search",
+            "hits": 48842
+        },
+        {
+            "path": "/cart",
+            "hits": 34181
+        },
+        {
+            "path": "/login",
+            "hits": 31658
+        },
+        {
+            "path": "/static/app.js",
+            "hits": 29249
+        },
+        {
+            "path": "/static/style.css",
+            "hits": 24299
+        },
+        {
+            "path": "/health",
+            "hits": 14549
+        },
+        {
+            "path": "/api/checkout",
+            "hits": 9807
+        },
+        {
+            "path": "/products/9820",
+            "hits": 20
+        },
+        {
+            "path": "/products/3919",
+            "hits": 20
+        },
+        {
+            "path": "/products/2254",
+            "hits": 19
+        },
+        {
+            "path": "/products/8231",
+            "hits": 19
+        },
+        {
+            "path": "/products/3732",
+            "hits": 19
+        },
+        {
+            "path": "/products/2991",
+            "hits": 18
+        },
+        {
+            "path": "/products/9396",
+            "hits": 18
+        },
+        {
+            "path": "/products/5378",
+            "hits": 18
+        },
+        {
+            "path": "/products/3309",
+            "hits": 18
+        },
+        {
+            "path": "/products/7778",
+            "hits": 18
+        },
+        {
+            "path": "/products/7655",
+            "hits": 18
+        }
+    ],
+    "hourly_distribution": {
+        "00": 51026,
+        "01": 50971,
+        "02": 50975,
+        "03": 50705,
+        "04": 50847,
+        "05": 51002,
+        "06": 50809,
+        "07": 50844,
+        "08": 50912,
+        "09": 36953,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0
+    }
+}

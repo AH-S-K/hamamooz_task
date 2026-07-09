@@ -6,9 +6,6 @@ def parse_log_line(line: str) -> dict | None:
     برای افزایش کارایی، به‌جای استفاده از Regex، از متدهای پایه رشته (مانند find و split)
     استفاده شده است تا سرعت پردازش فایل‌های حجیم به حداکثر برسد.
     """
-    line = line.rstrip()
-    if not line:
-        return None
 
     # ۱. استخراج IP و تاریخ با پیدا کردن براکت‌ها
     start_bracket = line.find('[')
